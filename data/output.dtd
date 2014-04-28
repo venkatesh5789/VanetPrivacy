@@ -1,0 +1,15 @@
+<!ELEMENT timestep (edge)>
+<!ATTLIST timestep time CDATA #REQUIRED>
+
+<!ELEMENT edge (lane)>
+<!ATTLIST edge id CDATA #REQUIRED>
+
+<!ELEMENT lane (vehicle)>
+<!ATTLIST lane id CDATA #REQUIRED>
+
+<!ELEMENT vehicle (#PCDATA)>
+<!ATTLIST vehicle 
+			id CDATA #REQUIRED
+			pos CDATA "0.00"
+			speed CDATA "0.00"
+>

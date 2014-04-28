@@ -4,18 +4,23 @@ import java.util.ArrayList;
 
 public class Timestep {
 	private ArrayList<Edge> edges;
-	double time;
+	private double time;
 	
 	public Timestep() {
 		super();
 		edges = new ArrayList<Edge>();
-		time = 0.00;
+		setTime(0.00);
 	}
 
 	public ArrayList<Edge> getEdges() {
 		return edges;
 	}
 	
+	public Timestep(double time) {
+		super();
+		this.time = time;
+	}
+
 	public void setEdges(ArrayList<Edge> edges) {
 		this.edges = edges;
 	}
@@ -27,5 +32,13 @@ public class Timestep {
 			return this.edges.get(edgeNumber);
 		
 		return null;		
+	}
+
+	public Double getTime() {
+		return time;
+	}
+
+	public void setTime(Double time) {
+		this.time = time;
 	}
 }

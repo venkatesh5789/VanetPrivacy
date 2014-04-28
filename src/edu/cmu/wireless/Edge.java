@@ -1,8 +1,10 @@
 package edu.cmu.wireless;
 
+import java.util.List;
+
 public class Edge {
 	private String id;
-	private Vehicle vehicle;
+	private List<Lane> lanes;
 	
 	public Edge(String id) {
 		super();
@@ -17,12 +19,13 @@ public class Edge {
 		this.id = id;
 	}
 
-	public Vehicle getVehicle() {
-		return vehicle;
+	public List<Lane> getLanes() {
+		return lanes;
 	}
 
-	public void setVehicle(Vehicle vehicle) {
-		this.vehicle = vehicle;
+	public void setLanes(List<Lane> lanes) {
+		this.lanes = lanes;
 	}
-		
+
+
 }
